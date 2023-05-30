@@ -23,11 +23,11 @@
 ## Ход работы:
 
 1.  Устанавливаю Docker и Docker-compose\
-    ![](png/docker.png)\
+    ![](docker.png)\
 
 2.  Использовать OpenVPN для работы с OPENCTI, основанной на elasticsearch
 
-    ![](png/openvpn.png)
+    ![](openvpn.png)
 
 > sudo apt install openvpn
 
@@ -41,7 +41,7 @@
 
 Настраиваю Docker-у Swarm
 
-![](png/ip.png)
+![](ip.png)
 
 > docker swarm init --advertise-addr 10.12.0.102
 
@@ -61,7 +61,7 @@
 
 Захожу на Portainer
 
-![](png/Portainer.png)
+![](Port.png)
 
 5.  Устанавливаю OpenCTI на Portainer
 
@@ -266,10 +266,11 @@ CONNECTOR_EXPORT_FILE_TXT_ID=dbe1157f-52b3-4585-b944-d33dfbc4e652
 CONNECTOR_IMPORT_FILE_STIX_ID=6b506a3d-18d8-42b5-8b1c-1b5e66b7efd5
 CONNECTOR_IMPORT_DOCUMENT_ID=0ce44ab3-3e52-4baa-b9ac-10f2fd04f3fe
 ```
-![](png/portcti.png)
+![](portcti.png)
 
 6.  Захожу на :8080 (Opencti)\
-    ![](png/cti1.png)![](png/cti2.png)
+    ![](cti1.png)
+    ![](cti2.png)
 
 7.  Беру старые данные и добавляем новые для анализа количество нежелательных доменов\
     dns.log\
@@ -277,7 +278,7 @@ CONNECTOR_IMPORT_DOCUMENT_ID=0ce44ab3-3e52-4baa-b9ac-10f2fd04f3fe
     mal.txt\
     Проверяем на нежелательность и получаем результат во вкладке Reports:\
     \
-    ![](png/badDomain.png)
+    ![](bd.png)
 
     Итоговое число таких доменов: **23**
 
