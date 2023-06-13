@@ -18,7 +18,7 @@
 ## Ход работы:
 
 1.  Созданный сайт:\
-    https://andrewkom.github.io/AUT_SSG/
+    https://dariashch.github.io/pr7.github.io/
 
 ## Вывод
 
