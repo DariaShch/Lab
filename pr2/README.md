@@ -50,7 +50,7 @@ df = zat.log_to_dataframe.LogToDataFrame()
 zdf = df.create_dataframe('dns.log')
 domain = zdf['query']
 domain.name='CNAME'
-df = pd.read_csv('Vrednie.txt',sep="\s+",names=['redirect_to','CNAME'])
+df = pd.read_csv('mal.txt',sep="\s+",names=['redirect_to','CNAME'])
 vred = df['CNAME']
 
 mer = pd.merge(domain,vred, how='left',indicator='exists', on=['CNAME'],)
